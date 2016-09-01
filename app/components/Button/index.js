@@ -13,12 +13,12 @@ const Button = (props) => {
   const className = props.className ? props.className : styles.button;
 
   let button = (
-    <a className={className} href={props.href} onClick={props.onClick}>{props.children}</a>
+    <a className={className} href={props.href} onClick={props.onClick}>{props.text}</a>
   );
 
   if (props.handleRoute) {
     button = (
-      <button className={className} onClick={props.handleRoute}>{props.children}</button>
+      <button className={className} onClick={props.handleRoute}>{props.text}</button>
     );
   }
 
@@ -34,7 +34,7 @@ Button.propTypes = {
   handleRoute: PropTypes.func,
   href: PropTypes.string,
   onClick: PropTypes.func,
-  children: PropTypes.node.isRequired,
+  text: PropTypes.string,
 };
 
 export default Button;

@@ -1,7 +1,9 @@
+/* global styles for the app */
+
 body {
   font-family: Verdana, Geneva, sans-serif;
 }
 
-body.jsFontLoaded {
+body.fontLoaded {
   font-family: 'Lato', sans-serif;
 }

@@ -1,0 +1,23 @@
+.paragraph {
+  font-size: 16px;
+  font-weight: 300;
+  color: #7F7F7F;
+  margin-top: 15px;
+  text-align: center;
+  max-width:800px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 2;
+}
+
+@media only screen and (min-width: 736px) {
+  .paragraph {
+    font-size: 20px;
+   }
+}
+
+@media only screen and (min-width: 1069px) {
+  .paragraph {
+    font-size: 24px;
+   }
+}
