@@ -1,0 +1,18 @@
+
+<svg width="203px" height="203px" viewBox="611 185 203 203" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M101.5,203 C157.556902,203 203,157.556902 203,101.5 C203,45.4430979 157.556902,0 101.5,0 C45.4430979,0 0,45.4430979 0,101.5 C0,157.556902 45.4430979,203 101.5,203 Z" id="path-1"></path>
+    </defs>
+    <g id="Group-3" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(611.000000, 185.000000)">
+        <circle id="Oval-11" fill="#D8D8D8" cx="101.5" cy="101.5" r="101.5"></circle>
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <use id="Mask" fill="#FFECB3" xlink:href="#path-1"></use>
+        <path d="M98.5,235.5 L61.5,6.5" id="Line" stroke="#FFFFFF" stroke-width="9" stroke-linecap="square" mask="url(#mask-2)"></path>
+        <path d="M189.975664,155.84292 L67.8229763,8.98230088" id="Line" stroke="#FFFFFF" stroke-width="18" stroke-linecap="square" mask="url(#mask-2)"></path>
+        <path d="M155.500001,113.5 L59.5,202.499999" id="Line" stroke="#FFFFFF" stroke-width="9" stroke-linecap="square" mask="url(#mask-2)"></path>
+    </g>
+</svg>

@@ -1,0 +1,28 @@
+.logoSection {
+  background-color: #FFC107;
+  padding-bottom: 60px;
+}
+
+.heroLogo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 90px;
+}
+
+.heroText {
+  font-size: 64px;
+  text-align: center;
+  margin-top: 45px;
+  color: white;
+  letter-spacing: 4px;
+}
+
+.aboutSection {
+  background-color: #F4F5F8;
+  padding-bottom: 50px;
+}
+
+.projectsSection {
+
+}
