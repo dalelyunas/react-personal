@@ -5,19 +5,13 @@
  *
  */
 
-import React, { PropTypes } from 'react';
+import React from 'react';
 import styles from './styles.css';
 
 const H1 = (props) => {
   return (
-    <h1 className={styles.heading1}>
-      {props.text}
-    </h1>
+    <h1 className={styles.heading1} {...props} />
   );
-};
-
-H1.propTypes = {
-  text: PropTypes.string,
 };
 
 export default H1;

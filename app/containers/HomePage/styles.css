@@ -2,16 +2,16 @@
   background-color: #FFC107;
   padding-bottom: 60px;
 }
-
-.heroLogo {
+.homeImg {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 90px;
+  padding-top: 70px;
+  max-width: 200px;
 }
 
 .heroText {
-  font-size: 64px;
+  font-size: 40px;
   text-align: center;
   margin-top: 45px;
   color: white;
@@ -24,5 +24,27 @@
 }
 
 .projectsSection {
+  padding-bottom: 50px;
+}
 
+@media only screen and (min-width: 736px) {
+  .homeImg {
+    font-size: 20px;
+    max-width: 300px;
+  }
+
+  .heroText {
+    font-size: 50px;
+  }
+}
+
+@media only screen and (min-width: 1069px) {
+  .homeImg {
+    font-size: 24px;
+    max-width: 400px;
+  }
+
+  .heroText {
+    font-size: 64px;
+  }
 }

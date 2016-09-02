@@ -13,6 +13,7 @@
 
 import React from 'react';
 import './styles.css';
+import Footer from 'components/Footer/index.js';
 
 export default class App extends React.Component { // eslint-disable-line react/prefer-stateless-function
 
@@ -24,6 +25,7 @@ export default class App extends React.Component { // eslint-disable-line react/
     return (
       <div>
         {this.props.children}
+        <Footer />
       </div>
     );
   }

@@ -2,11 +2,11 @@
   font-size: 16px;
   font-weight: 300;
   color: #7F7F7F;
-  margin-top: 15px;
-  text-align: center;
+  margin-top: 20px;
   max-width: 500px;
   margin-left: auto;
   margin-right: auto;
+  padding: 0 20px;
   line-height: 2;
 }
 
