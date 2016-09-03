@@ -21,6 +21,10 @@
   color: #FFF;
 }
 
+.button:focus {
+  outline: none;
+}
+
 @media only screen and (min-width: 736px) {
   .button {
     font-size: 24px;

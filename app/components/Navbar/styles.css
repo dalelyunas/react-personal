@@ -7,9 +7,14 @@
   display: inline-block;
   font-size: 24px;
   color: white;
-  margin-right: 30px;
   line-height: 60px;
   float: right;
+  padding: 0 20px;
+}
+
+.navLink:active {
+  background-color: #FFF;
+  color: #FFA000;
 }
 
 .navLogo {

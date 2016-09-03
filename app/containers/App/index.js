@@ -12,21 +12,15 @@
  */
 
 import React from 'react';
-import './styles.css';
 
 import { connect } from 'react-redux';
 import { push } from 'react-router-redux';
 
+import './styles.css';
 import Footer from 'components/Footer/index.js';
 import Navbar from 'components/Navbar/index.js';
 
 export class App extends React.Component { // eslint-disable-line react/prefer-stateless-function
-
-  static propTypes = {
-    children: React.PropTypes.node,
-    changeRoute: React.PropTypes.func,
-  };
-
   openRoute = (route) => {
     this.props.changeRoute(route);
   };
@@ -56,6 +50,12 @@ export class App extends React.Component { // eslint-disable-line react/prefer-s
     );
   }
 }
+
+App.propTypes = {
+  children: React.PropTypes.node,
+  changeRoute: React.PropTypes.func,
+};
+
 
 function mapDispatchToProps(dispatch) {
   return {

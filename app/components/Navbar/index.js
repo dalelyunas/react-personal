@@ -7,7 +7,6 @@
 import React from 'react';
 import styles from './styles.css';
 
-
 import NavLogo from 'img/nav-logo.svg';
 
 const Navbar = (props) => {
