@@ -13,20 +13,55 @@
 
 import React from 'react';
 import './styles.css';
-import Footer from 'components/Footer/index.js';
 
-export default class App extends React.Component { // eslint-disable-line react/prefer-stateless-function
+import { connect } from 'react-redux';
+import { push } from 'react-router-redux';
+
+import Footer from 'components/Footer/index.js';
+import Navbar from 'components/Navbar/index.js';
+
+export class App extends React.Component { // eslint-disable-line react/prefer-stateless-function
 
   static propTypes = {
     children: React.PropTypes.node,
+    changeRoute: React.PropTypes.func,
+  };
+
+  openRoute = (route) => {
+    this.props.changeRoute(route);
+  };
+
+  openAbout = () => {
+    this.openRoute('/about');
+  };
+
+  openProjects = () => {
+    this.openRoute('/projects');
   };
 
   render() {
     return (
       <div>
+        <Navbar
+          items={
+            [
+              { title: 'PROJECTS', handleRoute: this.openProjects },
+              { title: 'ABOUT', handleRoute: this.openAbout },
+            ]
+                }
+        />
         {this.props.children}
         <Footer />
       </div>
     );
   }
 }
+
+function mapDispatchToProps(dispatch) {
+  return {
+    changeRoute: (url) => dispatch(push(url)),
+    dispatch,
+  };
+}
+
+export default connect(null, mapDispatchToProps)(App);

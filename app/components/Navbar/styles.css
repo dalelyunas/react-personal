@@ -1,0 +1,19 @@
+.navWrapper {
+  background-color: #FFA000;
+  height: 60px;
+}
+
+.navLink {
+  display: inline-block;
+  font-size: 24px;
+  color: white;
+  margin-right: 30px;
+  line-height: 60px;
+  float: right;
+}
+
+.navLogo {
+  height: 50px;
+  margin-top: 5px;
+  margin-left: 5px;
+}
