@@ -1,0 +1,15 @@
+.boxHeader {
+  background-color: #FFC107;
+  height: 60px;
+}
+
+.boxText {
+  color: #7F7F7F;
+  padding-left: 20px;
+  font-size: 30px;
+  line-height: 60px;
+}
+
+.boxImage {
+  display: block;
+}
