@@ -19,7 +19,7 @@ if (!pkg.dllPlugin) { process.exit(0); }
 const dllConfig = defaults(pkg.dllPlugin, dllPlugin.defaults);
 const outputPath = join(process.cwd(), dllConfig.path);
 
-module.exports = require('./webpack.base.abel')({
+module.exports = require('./webpack.base.babel')({
   context: process.cwd(),
   entry: dllConfig.dlls ? dllConfig.dlls : dllPlugin.entry(pkg),
   devtool: 'eval',
