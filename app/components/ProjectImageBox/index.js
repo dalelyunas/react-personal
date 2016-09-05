@@ -9,8 +9,6 @@
 import React, { PropTypes } from 'react';
 import styles from './styles.css';
 
-import H1 from 'components/H1/index.js';
-
 const ProjectImageBox = (props) => {
   return (
     <div>

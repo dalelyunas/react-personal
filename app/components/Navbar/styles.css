@@ -5,11 +5,11 @@
 
 .navLink {
   display: inline-block;
-  font-size: 24px;
+  font-size: 20px;
   color: white;
   line-height: 60px;
   float: right;
-  padding: 0 20px;
+  padding: 0 10px;
 }
 
 .navLink:active {
@@ -21,4 +21,18 @@
   height: 50px;
   margin-top: 5px;
   margin-left: 5px;
+}
+
+@media only screen and (min-width: 736px) {
+  .navLink {
+    font-size: 24px;
+    padding: 0 20px;
+  }
+}
+
+@media only screen and (min-width: 1069px) {
+  .navLink {
+    font-size: 24px;
+    padding: 0 20px;
+  }
 }

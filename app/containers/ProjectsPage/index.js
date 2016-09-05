@@ -11,14 +11,47 @@ import P from 'components/P/index.js';
 import ProjectImageBox from 'components/ProjectImageBox/index.js';
 import styles from './styles.css';
 
-import LogoImg from 'img/hero-logo.svg';
+import HotCold from 'img/hot+cold.png';
 
 const ProjectsPage = () => {
   return (
     <div className={styles.projectsWrapper}>
       <H1>MY PROJECTS</H1>
       <div className={styles.project}>
-        <ProjectImageBox title="HOT+COLD" img={LogoImg} />
+        <ProjectImageBox title="HOT+COLD" img={HotCold} />
+        <P>Hot+Cold is an iOS app I worked on during Hack Beanpot in January of 2015. The app randomly selects a destination using the Google Places API and directs the user there using warmer and colder instructions. The screen tracks progress by transitioning from blue to white to red, indicating how close you are to the destination.</P>
+        <P>I developed a good portion of the internal workings of the app including the location tracking code, the color interpolation for the screen, and the basic logic behind the warmer and colder notifications. I went into the hackathon relatively inexperienced with Swift and managed to learn a lot about core location and the MVC pattern by the end. The app ended up winning the "Most Fun" award at the hackathon.</P>
+        <div className={styles.buttonContainer}>
+          <div className={styles.buttonRight}>
+            <Button>APP STORE</Button>
+          </div>
+          <div className={styles.buttonLeft}>
+            <Button>GITHUB</Button>
+          </div>
+        </div>
+      </div>
+
+      <div className={styles.project}>
+        <ProjectImageBox title="MUSICAGGR" img={HotCold} />
+        <P>MusicAggr is a Python script I put together as a learning project. It first uses the LastFm API to get the last 10 songs a group has listened to. Then it finds the albums of those songs and adds every song in those albums to a spotify playlist. Finally, after the songs are a week old, it deletes them from the playlist</P>
+        <P>The script is pretty basic and mainly consists of various for loops to filter the content from the LastFm API to get relevant data.</P>
+        <div className={styles.buttonContainer}>
+            <Button>GITHUB</Button>
+        </div>
+      </div>
+
+      <div className={styles.project}>
+        <ProjectImageBox title="RESTAURANT PICKER" img={HotCold} />
+        <P>Restaurant Picker is a website I made to learn Angular. The website asks for a set of parameters from the user, such as search radius, food type, etc., and randomly selects a reestaurant that fits the criteria using the Yelp API.</P>
+        <P>The website has a service that interacts with the Yelp API to pull information and process it. The rest of the code is to style and format the site and to add a few effects like a slideshow background.</P>
+        <div className={styles.buttonContainer}>
+          <div className={styles.buttonRight}>
+            <Button>WEBSITE</Button>
+          </div>
+          <div className={styles.buttonLeft}>
+            <Button>GITHUB</Button>
+          </div>
+        </div>
       </div>
     </div>
   );
