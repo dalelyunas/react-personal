@@ -1,5 +1,5 @@
 .footerWrapper {
-  background-color: #222222;
+  background-color: #222;
   color: #FFF;
   height: 240px;
   font-weight: 300;
@@ -25,7 +25,7 @@
 @media only screen and (min-width: 1069px) {
   .footerSection {
     display: inline-block;
-    width: calc(100/3)%;
+    width: 33.3333%;
     line-height: 240px;
     padding-top: 0;
     font-size: 24px;

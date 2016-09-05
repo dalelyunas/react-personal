@@ -7,7 +7,7 @@
 import React from 'react';
 import styles from './styles.css';
 
-import NavLogo from 'img/nav-logo.svg';
+import NavLogo from 'img/nav-logo.png';
 
 const Navbar = (props) => {
   let navLinks = (<div></div>);
@@ -20,7 +20,7 @@ const Navbar = (props) => {
 
   return (
     <header className={styles.navWrapper}>
-      <img className={styles.navLogo} src={NavLogo} />
+      <img role="presentation" className={styles.navLogo} src={NavLogo} />
       {navLinks}
     </header>
   );

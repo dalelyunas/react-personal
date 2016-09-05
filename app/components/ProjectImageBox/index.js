@@ -9,16 +9,14 @@
 import React, { PropTypes } from 'react';
 import styles from './styles.css';
 
-const ProjectImageBox = (props) => {
-  return (
-    <div>
-      <div className={styles.boxHeader}>
-        <h1 className={styles.boxText}>{props.title}</h1>
-      </div>
-      <img role="presentation" className={styles.boxImage} src={props.img} />
+const ProjectImageBox = (props) => (
+  <div>
+    <div className={styles.boxHeader}>
+      <h1 className={styles.boxText}>{props.title}</h1>
     </div>
-  );
-};
+    <img role="presentation" className={styles.boxImage} src={props.img} />
+  </div>
+);
 
 ProjectImageBox.propTypes = {
   title: PropTypes.string,

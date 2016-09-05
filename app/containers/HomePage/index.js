@@ -14,8 +14,8 @@ import H1 from 'components/H1/index.js';
 import P from 'components/P/index.js';
 import styles from './styles.css';
 
-import HeroLogo from 'img/hero-logo.svg';
-import MediaImg from 'img/media.svg';
+import HeroLogo from 'img/hero-logo.png';
+import MediaImg from 'img/media.png';
 
 export class HomePage extends React.Component {
 
@@ -35,7 +35,7 @@ export class HomePage extends React.Component {
     return (
       <div>
         <section className={styles.logoSection}>
-          <img className={styles.homeImg} src={HeroLogo} />
+          <img role="presentation" className={styles.homeImg} src={HeroLogo} />
           <h1 className={styles.heroText}>"INSPIRING QUOTE"</h1>
         </section>
         <section className={styles.aboutSection}>
@@ -43,7 +43,7 @@ export class HomePage extends React.Component {
           <P style={pStyle}>I am a 20 year old developer, student, and sometimes designer living in Boston. I currently attend Northeastern University in pursuit of a BS in Computer Science. Check out my Résumé.</P>
         </section>
         <section className={styles.projectsSection}>
-          <img className={styles.homeImg} src={MediaImg} />
+          <img role="presentation" className={styles.homeImg} src={MediaImg} />
           <P style={pStyle}>I enjoy creating fully responsive websites using the latest and best web frameworks and libraries. My current obsession is with React (and the million dependencies that come with it). To see what else i’ve dabbled in, check out:</P>
           <Button handleRoute={this.openProjects}>MY PROJECTS</Button>
         </section>

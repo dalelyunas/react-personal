@@ -8,10 +8,8 @@
 import React from 'react';
 import styles from './styles.css';
 
-const H1 = (props) => {
-  return (
-    <h1 className={styles.heading1} {...props} />
-  );
-};
+const H1 = (props) => (
+  <h1 className={styles.heading1} {...props} />
+);
 
 export default H1;

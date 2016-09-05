@@ -4,11 +4,10 @@
 }
 
 .navLink {
-  display: inline-block;
+  float: right;
   font-size: 20px;
   color: white;
   line-height: 60px;
-  float: right;
   padding: 0 10px;
 }
 
@@ -18,7 +17,7 @@
 }
 
 .navLogo {
-  height: 50px;
+  width: 50px;
   margin-top: 5px;
   margin-left: 5px;
 }
