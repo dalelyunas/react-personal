@@ -12,6 +12,8 @@ import ProjectImageBox from 'components/ProjectImageBox/index.js';
 import styles from './styles.css';
 
 import HotCold from 'img/hot+cold.png';
+import MusicAggr from 'img/musicaggr.png';
+import ResPickr from 'img/respickr.png';
 
 const ProjectsPage = () => {
   return (
@@ -23,33 +25,33 @@ const ProjectsPage = () => {
         <P>I developed a good portion of the internal workings of the app including the location tracking code, the color interpolation for the screen, and the basic logic behind the warmer and colder notifications. I went into the hackathon relatively inexperienced with Swift and managed to learn a lot about core location and the MVC pattern by the end. The app ended up winning the "Most Fun" award at the hackathon.</P>
         <div className={styles.buttonContainer}>
           <div className={styles.buttonRight}>
-            <Button>APP STORE</Button>
+            <Button href="https://itunes.apple.com/us/app/hot-+-cold/id979447640?mt=8">APP STORE</Button>
           </div>
           <div className={styles.buttonLeft}>
-            <Button>GITHUB</Button>
+            <Button href="https://github.com/jackfrys/Hot-Cold">GITHUB</Button>
           </div>
         </div>
       </div>
 
       <div className={styles.project}>
-        <ProjectImageBox title="MUSICAGGR" img={HotCold} />
+        <ProjectImageBox title="MUSICAGGR" img={MusicAggr} />
         <P>MusicAggr is a Python script I put together as a learning project. It first uses the LastFm API to get the last 10 songs a group has listened to. Then it finds the albums of those songs and adds every song in those albums to a spotify playlist. Finally, after the songs are a week old, it deletes them from the playlist</P>
         <P>The script is pretty basic and mainly consists of various for loops to filter the content from the LastFm API to get relevant data.</P>
         <div className={styles.buttonContainer}>
-            <Button>GITHUB</Button>
+          <Button href="https://github.com/dalelyunas/MusicAggr">GITHUB</Button>
         </div>
       </div>
 
       <div className={styles.project}>
-        <ProjectImageBox title="RESTAURANT PICKER" img={HotCold} />
+        <ProjectImageBox title="RESTAURANT PICKER" img={ResPickr} />
         <P>Restaurant Picker is a website I made to learn Angular. The website asks for a set of parameters from the user, such as search radius, food type, etc., and randomly selects a reestaurant that fits the criteria using the Yelp API.</P>
         <P>The website has a service that interacts with the Yelp API to pull information and process it. The rest of the code is to style and format the site and to add a few effects like a slideshow background.</P>
         <div className={styles.buttonContainer}>
           <div className={styles.buttonRight}>
-            <Button>WEBSITE</Button>
+            <Button href="">WEBSITE</Button>
           </div>
           <div className={styles.buttonLeft}>
-            <Button>GITHUB</Button>
+            <Button href="https://github.com/dalelyunas/Restaurant-Picker">GITHUB</Button>
           </div>
         </div>
       </div>
