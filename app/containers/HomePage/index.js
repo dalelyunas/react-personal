@@ -47,7 +47,6 @@ export class HomePage extends React.Component {
           <P style={pStyle}>I enjoy creating fully responsive websites using the latest and best web frameworks and libraries. My current obsession is with React (and the million dependencies that come with it). To see what else i’ve dabbled in, check out:</P>
           <Button handleRoute={this.openProjects}>MY PROJECTS</Button>
         </section>
-
       </div>
     );
   }
