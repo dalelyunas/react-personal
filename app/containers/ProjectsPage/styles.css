@@ -11,7 +11,7 @@
   margin-top: 30px;
   overflow: auto;
   background-color: #FBFBFB;
-  padding: 20px;
+  padding: 20px 0;
 }
 
 .buttonContainer {
@@ -42,5 +42,6 @@
 
   .project {
     width: 800px;
+    padding: 40px 20px;
   }
 }
