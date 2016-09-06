@@ -10,6 +10,8 @@
   margin-right: auto;
   margin-top: 30px;
   overflow: auto;
+  background-color: #FBFBFB;
+  padding: 20px;
 }
 
 .buttonContainer {
