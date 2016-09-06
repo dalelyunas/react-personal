@@ -1,5 +1,7 @@
 .boxWrapper {
   padding: 0 20px;
+  max-width: 500px;
+  margin: 0 auto;
 }
 
 .boxHeader {
@@ -20,7 +22,14 @@
   width: 100%;
 }
 
-@media only screen and (min-width: 737px) {
+@media only screen and (min-width: 539px) {
+  .boxWrapper {
+    max-width: 100%;
+    margin: 0;
+  }
+}
+
+@media only screen and (min-width: 736px) {
   .boxHeader {
     height: 50px;
   }

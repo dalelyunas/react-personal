@@ -1,11 +1,13 @@
 .projectsWrapper {
   background-color: #F4F5F8;
   overflow: auto;
+  padding: 20px;
   padding-bottom: 50px;
 }
 
 .project {
-  width: 300px;
+  width: 100%;
+  min-width: 280px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 30px;
@@ -20,6 +22,12 @@
   margin-right: auto;
 }
 
+@media only screen and (min-width: 539px) {
+  .project {
+    width: 500px;
+  }
+}
+
 @media only screen and (min-width: 736px) {
   .buttonLeft {
     float: left;
@@ -31,6 +39,7 @@
 
   .project {
     width: 600px;
+    padding: 40px 20px;
   }
 }
 
@@ -42,6 +51,5 @@
 
   .project {
     width: 800px;
-    padding: 40px 20px;
   }
 }
