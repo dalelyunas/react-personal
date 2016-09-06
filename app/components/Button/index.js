@@ -18,7 +18,7 @@ const Button = (props) => {
 
   if (props.handleRoute) {
     button = (
-      <button className={className} onClick={props.handleRoute}>{props.children}</button>
+      <a className={className} onClick={props.handleRoute}>{props.children}</a>
     );
   }
 

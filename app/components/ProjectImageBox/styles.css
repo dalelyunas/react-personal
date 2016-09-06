@@ -1,18 +1,32 @@
+.boxWrapper {
+  padding: 0 20px;;
+}
+
 .boxHeader {
   background-color: #FFC107;
-  height: 50px;
+  height: 40px;
 }
 
 .boxText {
   color: #7F7F7F;
   padding-left: 20px;
-  font-size: 24px;
-  line-height: 50px;
+  font-size: 20px;
+  line-height: 40px;
 }
 
 .boxImage {
   display: block;
   width: 100%;
+}
+@media only screen and (min-width: 737px) {
+  .boxHeader {
+    height: 50px;
+  }
+
+  .boxText {
+    font-size: 24px;
+    line-height: 50px;
+  }
 }
 
 @media only screen and (min-width: 1069px) {

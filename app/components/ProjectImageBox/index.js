@@ -10,7 +10,7 @@ import React, { PropTypes } from 'react';
 import styles from './styles.css';
 
 const ProjectImageBox = (props) => (
-  <div>
+  <div className={styles.boxWrapper}>
     <div className={styles.boxHeader}>
       <h1 className={styles.boxText}>{props.title}</h1>
     </div>
