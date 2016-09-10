@@ -46,12 +46,7 @@ const ProjectsPage = () => (
       <P>Restaurant Picker is a website I made to learn Angular. The website asks for a set of parameters from the user, such as search radius, food type, etc., and randomly selects a reestaurant that fits the criteria using the Yelp API.</P>
       <P>The website has a service that interacts with the Yelp API to pull information and process it. The rest of the code is to style and format the site and to add a few effects like a slideshow background.</P>
       <div className={styles.buttonContainer}>
-        <div className={styles.buttonRight}>
-          <Button href="">WEBSITE</Button>
-        </div>
-        <div className={styles.buttonLeft}>
-          <Button href="https://github.com/dalelyunas/Restaurant-Picker">GITHUB</Button>
-        </div>
+        <Button href="https://github.com/dalelyunas/Restaurant-Picker">GITHUB</Button>
       </div>
     </div>
   </div>
