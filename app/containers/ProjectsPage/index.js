@@ -14,10 +14,19 @@ import styles from './styles.css';
 import HotCold from 'img/hot+cold.png';
 import MusicAggr from 'img/musicaggr.png';
 import ResPickr from 'img/respickr.png';
+import PerWeb from 'img/perweb.png';
 
 const ProjectsPage = () => (
   <div className={styles.projectsWrapper}>
     <H1>MY PROJECTS</H1>
+    <div className={styles.project}>
+      <ProjectImageBox title="PERSONAL WEBSITE" img={PerWeb} />
+      <P>This project was the first released version of my personal website. The website was one page and contained basic about information and a projects section. The layout consisted of a grid of cards underneath a hero image.</P>
+      <P>I wrote the site using basic HTML, SCSS, and Javascript. I wanted to avoid any major frameworks or libraries so I could learn some of the basics of web development before adding a lot of overhead to my projects. I ended up putting the most work into designing the website to get it to be properly responsive across all platforms. </P>
+      <div className={styles.buttonContainer}>
+        <Button href="https://github.com/dalelyunas/PersonalWebsite">GITHUB</Button>
+      </div>
+    </div>
     <div className={styles.project}>
       <ProjectImageBox title="HOT+COLD" img={HotCold} />
       <P>Hot+Cold is an iOS app I worked on during Hack Beanpot in January of 2015. The app randomly selects a destination using the Google Places API and directs the user there using warmer and colder instructions. The screen tracks progress by transitioning from blue to white to red, indicating how close you are to the destination.</P>
