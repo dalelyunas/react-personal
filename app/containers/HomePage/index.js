@@ -36,11 +36,11 @@ export class HomePage extends React.Component {
       <div>
         <section className={styles.logoSection}>
           <img role="presentation" className={styles.homeImg} src={HeroLogo} />
-          <h1 className={styles.heroText}>"INSPIRING QUOTE"</h1>
+          <h1 className={styles.heroText}>DAVID ALELYUNAS</h1>
         </section>
         <section className={styles.aboutSection}>
           <H1>HI, I'M DAVID.</H1>
-          <P style={pStyle}>I am a 20 year old developer, student, and sometimes designer living in Boston. I currently attend Northeastern University in pursuit of a BS in Computer Science after returning from a co-op at Intuit.</P>
+          <P style={pStyle}>I am a 21 year old developer, student, and sometimes designer living in Boston. I currently attend Northeastern University in pursuit of a BS in Computer Science after returning from a co-op at Intuit.</P>
         </section>
         <section className={styles.projectsSection}>
           <img role="presentation" className={styles.homeImg} src={MediaImg} />
